@@ -74,4 +74,4 @@ This project is licensed under the GNU General Public License v3.0 (GPL-3.0). Se
 
 ## Credits
 
-Based on bf16 by p2r3, which is also GPL-3.0 licensed.
+Based on bf16 by p2r3
