@@ -2,21 +2,50 @@
 
 This is a visual interpreter for the I use Arch btw esoteric programming language, based on Brainfuck.
 
-## Usage
+## Installation and Usage
 
-Compile the interpreter:
+### Step 1: Install Dependencies
+
+Ensure you have GCC and SDL2 installed.
+
+On Ubuntu/Debian:
+```bash
+sudo apt update
+sudo apt install gcc libsdl2-dev
+```
+
+On Arch Linux:
+```bash
+sudo pacman -S gcc sdl2
+```
+
+On other systems, install SDL2 development libraries accordingly.
+
+### Step 2: Compile the Interpreter
+
+In the project directory, compile the source code:
 
 ```bash
 gcc visual_interpreter.c -o visual_interpreter -lSDL2 -lm
 ```
 
-Run the snake game:
+This creates the `visual_interpreter` executable.
+
+### Step 3: Run the Snake Game
+
+Execute the interpreter with the snake game file:
 
 ```bash
 ./visual_interpreter snake.archbtw
 ```
 
-Use arrow keys to control the snake. The game runs in a 512x512 window with 16x16 pixel framebuffer.
+A 512x512 window will open displaying the game. Use arrow keys to control the snake. Close the window to exit.
+
+### Troubleshooting
+
+- If compilation fails, ensure SDL2 is installed.
+- If the window doesn't open, check your display environment (e.g., X11 on Linux).
+- The game requires a graphical desktop.
 
 ## Requirements
 
